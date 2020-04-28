@@ -10,17 +10,17 @@ const app = express();
 const customerRoutes = require('./routes/customer');
 
 // settings
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // middlewares
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-  host: 'sql3.freemysqlhosting.net',
-  user: 'sql3334963',
-  password: 'lRxedSAaBM',
-  database: 'sql3334963',
+  host: 'sql9.freemysqlhosting.net',
+  user: 'sql9336166',
+  password: 'TRCHELmbl7',
+  database: 'sql9336166',
   port: '3306'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
